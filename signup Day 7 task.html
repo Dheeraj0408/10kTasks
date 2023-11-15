@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <fieldset>
+      <center>
+        <table>
+          <form action="./signin.html" method="post" target="_blank">
+            <tr>
+              <th colspan="3"><img src="../images/flipkart.png" alt="flipkart" height="100px"/></th>
+            </tr>
+            <tr>
+              <th colspan="2">
+                <u><h1>Registration Form</h1></u>
+              </th>
+            </tr>
+            <tr>
+              <td>
+                <strong><label for="fname">First Name : </label></strong>
+              </td>
+              <td>
+                <input
+                  type="text"
+                  name="fname"
+                  id="fname"
+                  placeholder="Enter your First Name"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <b><label for="lname">Last Name :</label></b>
+              </td>
+              <td>
+                <input
+                  type="text"
+                  name="lname"
+                  id="lname"
+                  placeholder="Enter you last Name"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong><label for="phn">Mobile Number :</label></strong>
+              </td>
+              <td>
+                <input
+                  type="tel"
+                  name="phn"
+                  id="phn"
+                  pattern="[0-9]{10}"
+                  placeholder="Enter your Mobile Number"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong><label for="email">Email :</label></strong>
+              </td>
+              <td>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Enter your Email"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong><p>Select your Gender :</p></strong>
+              </td>
+              <td>
+                <input type="radio" name="gender" id="male" value="male" />Male
+                <input
+                  type="radio"
+                  name="gender"
+                  id="female"
+                  value="female"
+                />Female
+              </td>
+            </tr>
+            <tr>
+              <td><strong><label for="dob">Date of Birth :</label></strong></td><td><input type="date" name="dob" id="dob"></td></tr>
+            <tr>
+              <tr>
+                <td><strong><p>Select your favourite color :</p></strong></td>
+                <td><input type="color" name="color" id="color"/></td>
+              </tr>
+              <tr>
+                <td><strong><label for="week">Week :</label></strong></td>
+                <td><input type="week" name="week" id="week"/></td>
+              </tr>
+              <tr>
+                <td><strong><label for="time">Appointment Time :</label></strong></td>
+                <td><input type="time" name="time" id="time"/></td>
+              </tr>
+              <td>
+                <strong
+                  ><label for="country">Select your Country :</label></strong
+                >
+              </td>
+              <td>
+                <select id="country">
+                  <option value="India">India</option>
+                  <option value="England">England</option>
+                  <option value="Pakisthan">Pakisthan</option>
+                  <option value="South Africa">South Africa</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong><label for="addr">Address:</label></strong>
+              </td>
+              <td>
+                <textarea
+                  name="addr"
+                  id="addr"
+                  cols="25"
+                  rows="8"
+                  placeholder="Communication Address"
+                ></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong><p>Languages Known :</p></strong>
+              </td>
+              <td>
+                <label for="telugu">Telugu</label
+                ><input type="checkbox" name="telugu" id="telugu" checked />
+                <label for="english">English</label
+                ><input type="checkbox" name="english" id="english" /><label
+                  for="hindi"
+                  >Hindi</label
+                ><input type="checkbox" name="hindi" id="hindi" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong><label for="pwd">Password :</label></strong>
+              </td>
+              <td><input type="password" name="pwd" id="pwd" /></td>
+            </tr>
+            <tr>
+              <td>
+                <strong><label for="cpwd">Confirm Password :</label></strong>
+              </td>
+              <td><input type="password" name="cpwd" id="cpwd" /></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td align="right"><input type="reset" value="Reset" /></td>
+              <td><input type="submit" value="Submit" /></td>
+            </tr>
+            <tr>
+              <td colspan="2" align="center">
+                Already have an account ?<a href="./signin.html">
+                  Click here to login
+                </a>
+              </td>
+            </tr>
+          </form>
+        </table>
+      </center>
+    </fieldset>
+  </body>
+</html>
