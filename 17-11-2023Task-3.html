@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Album</title>
+    <style>
+        body{
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            font-family: century gothic,sans-serif;
+        }
+        .main{
+           
+           /* border: 3px solid black;
+           border-radius: 20px; */
+
+           display: flex;
+           justify-content: center;
+           gap: 30px;
+           flex-wrap: wrap;
+           padding: 20px;
+
+        }
+        .child{
+            border: 1px solid #ddd;
+            background-color: #fff;
+            width: 330px;
+            height: 190px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+
+        }
+        img{
+            background-color: aquamarine;
+        }
+        [alt]{
+            width: 250px;
+            height: 120px;
+            border-radius: 10px;
+            padding: 15px;
+            background-color: #3498db; 
+           
+        }
+        h1{
+            font-size: 35px;
+            font-family: century gothic;
+            text-align: center;
+        }
+        h1:hover{
+            color: #e74c3c;
+            
+        }
+        img:hover{
+            
+            width: 300px;
+            height: 160px;
+            
+            border: 1px solid #3498db; 
+            background-color: #e74c3c; 
+            
+        }
+
+        p{
+            display: none;
+            font-size: 30px;
+            font-family: century gothic;
+            background-color: #e74c3c;
+            color: #ddd;
+        }
+        img:hover+p{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Outdoor Adventures</h1>
+    <div class="main">
+        
+        <div class="child"><img src="https://improvephotography.com/wp-content/uploads/2017/03/Sunset-Arch-900px.jpg" alt="Hiking Landscapes" /><p>Hiking Landscapes</p></div>
+        <div class="child"><img src="https://thumbs.dreamstime.com/b/lit-tent-5829206.jpg?w=768" alt="Camping Scenes" /><p>Camping Scenes</p></div>
+        <div class="child"><img src="https://assets.simpleviewinc.com/simpleview/image/fetch/c_fill,h_450,q_75,w_800/http://res.cloudinary.com/simpleview/image/upload/v1523278774/clients/virginiabeachva/144_3_0274_jpeg_baf31b98-d1df-46d4-8bd0-33dd2d5b91f8.jpg" alt="Beach Sunset" /><p>Beach Sunset</p></div>
+        <div class="child"><img src="https://www.nhm.ac.uk/resources/visit/wpy/2023/medium/webp/b4381c26-6182-4e38-a6ac-95c6cc81cb91.webp" alt="Wildlife Photography" /><p>Wild Life Photography</p></div>
+        <div class="child"><img src="https://1.bp.blogspot.com/-RtUcQcNGCZk/YULf-oZae-I/AAAAAAAAjUw/5Ye-9AbZ_RsgWBx-wX7I74YlZedbbYz3ACLcBGAsYHQ/s16000/dsc_1492.JPG" alt="waterfall exploration" /><p>Waterfall Exploration</p></div>
+        <div class="child"><img src="https://cdn1.matadornetwork.com/blogs/1/2022/05/parasailing-vs-paragliding.jpg" alt="Parasailing" /><p>Para Sailing</p></div>
+        <div class="child"><img src="https://imgs.search.brave.com/fdob3_zXombWLYfKr3sXy4MkFRmgJEJjljRet48uTRg/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9iZXN0/c2ltaWxhci5jb20v/aW1nL3RhZy90aHVt/Yi9kNS8yOTcwNS5q/cGc" alt="Paragliding" /><p>Para Gliding</p></div>
+        <div class="child"><img src="https://cms-media.getmyboat.com/production/images/boating-adventures-amazon-3604.width-750.jpg" alt="Boating scenes" /><p>Boating Scenes</p></div>
+        <div class="child"><img src="https://images.pexels.com/photos/2835436/pexels-photo-2835436.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Snow-capped Mountains" /><p>Snow-capped Mountains</p></div>
+    </div>
+</body>
+</html>

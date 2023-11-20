@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+    <style>
+     
+      p{
+        text-align: center;
+      }
+      p a{
+        background-color: chartreuse;
+        color: white;
+        padding:10px 20px;
+        border-radius: 3px;
+      }
+      .album{
+        width: 1100px;
+        height: 600px;
+        border: 1px solid transparent;
+        margin-top: 19px;
+
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+      }
+      .item{
+        width: 230px;
+        height: 370px;
+      }
+      img{
+        width: 180px;
+        height: 240px;
+      }
+      body{
+        margin: 0px;
+        padding: 0px;
+      }
+      .main{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      .top-menu{
+        background-color: rgba(50, 37, 37, 0.861);
+       border: transparent;
+       
+       height: 39px;
+       width: 95%;
+
+       display: flex;
+       justify-content: center;
+       text-align: center;
+       column-gap: 30px;
+       
+       
+      }
+      .top-menu a{
+        
+        color: white;
+        text-align: center;
+        padding: 10px 12px;
+        
+      }
+      .top-menu a:hover{
+        background-color: bisque;
+        color: black;
+      }
+      /* .top-menu>ul li{
+        display: inline-block;
+        margin-left: 10px;
+        text-align: center;
+        color: white;
+        border: transparent;
+        height: 30px;
+       
+      }
+      .top-menu>ul li:hover{
+       cursor: pointer;
+       color: black;
+       background-color: bisque;
+      } */
+      .parent {
+        width: 30px;
+        height: 15px;
+        /* border: 1px solid black; */
+        background-color: rgba(50, 37, 37, 0.861);
+        border: transparent;
+        padding: 12px;
+        display: flex;
+        gap: 2px;
+        flex-direction: column;
+        
+      }
+
+      .child {
+        background-color: white;
+        width: 25px;
+        height: 2px;
+        border: 1px solid black;
+        border-radius: 30px;
+      }
+      .side-menu{
+        width: 150px;
+        height: 570px;
+      }
+      .parent:hover~.side-menu{
+        cursor: pointer;
+        border: 1px solid black;
+        background-color: rgba(0, 0, 0, 0.861);
+      }
+      .side-menu:hover {
+        border: 1px solid black;
+        background-color: rgba(0, 0, 0, 0.861);
+      }
+      
+      .side-menu > ul li {
+        display: inline-block;
+        color: white;
+        padding: 10px;
+        font-size: large;
+       
+      }
+      .side-menu > ul li:hover {
+        cursor: pointer;
+        background-color: bisque;
+        color: black;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="parent">
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>  
+    </div>
+
+    <div class="top-menu">
+      <a href="#">Home</a><a href="#">About</a><a href="#">Log in</a><a href="#">Sign up</a><a href="#">My account</a>
+      <!-- <ul type="none">
+        <li>Home</li>
+        <li>About us</li>
+        <li>Log in</li>
+        <li>Sign Up</li>
+        <li>My account</li>
+      </ul> -->
+    </div>
+    
+    <div class="side-menu">
+      <ul type="none">
+        <li>Home</li>
+        <li>Services</li>
+        <li>Log in</li>
+        <li>signup</li>
+        <li>About us</li>
+      </ul>
+    </div> 
+    <div class="album">
+          <div class="item"><img src="https://rukminim2.flixcart.com/image/832/832/xif0q/mobile/9/l/3/-original-imaghgcktmwxthzc.jpeg?q=70" alt="Realme 10"/><p>Realme 10</p>10,999<p><a href="https://www.flipkart.com/realme-10-rush-black-128-gb/p/itmd6481542c3c73?pid=MOBGH2VFY4GSQHJ7&lid=LSTMOBGH2VFY4GSQHJ7HPMF3W&marketplace=FLIPKART&store=tyy%2F4io&srno=b_1_1&otracker=browse&fm=organic&iid=90dd51f1-2614-4575-84e6-78f236419bcc.MOBGH2VFY4GSQHJ7.SEARCH&ppt=hp&ppn=homepage&ssid=gbbelafjqo0000001700462281750">Buy</a></p></div>
+          <div class="item"><img src="https://rukminim2.flixcart.com/image/832/832/xif0q/mobile/k/u/n/-original-imagzjhwtfthcmzz.jpeg?q=70" alt="Vivo T2x"><p>Vivo T2x 5G</p><p>12,999</p><p><a href="https://www.flipkart.com/vivo-t2x-5g-marine-blue-128-gb/p/itmcb8f0f6a85d5d?pid=MOBGZBFU4HBKKFSN&lid=LSTMOBGZBFU4HBKKFSNRCJ28C&marketplace=FLIPKART&store=tyy%2F4io&spotlightTagId=BestsellerId_tyy%2F4io&srno=b_1_2&otracker=browse&fm=organic&iid=0a50d6eb-393d-4b52-a1ab-2ff18041ee33.MOBGZBFU4HBKKFSN.SEARCH&ppt=browse&ppn=browse&ssid=2gxpvgghw00000001700462426449">Buy</a></p></div>
+          <div class="item"><img src="https://rukminim2.flixcart.com/image/832/832/xif0q/mobile/0/x/v/-original-imagqadf2awzzmyf.jpeg?q=70" alt="Realme 11 pro+"/><p>Realme 11 pro+ 5G</p><p>27,999</p><p><a href="https://www.flipkart.com/realme-11-pro-5g-oasis-green-256-gb/p/itm5647cce338e55?pid=MOBGPU8H9KVVVHMS&lid=LSTMOBGPU8H9KVVVHMSM5WQKX&marketplace=FLIPKART&store=tyy%2F4io&srno=b_1_3&otracker=browse&fm=organic&iid=1bfb9bc8-ed1c-4482-8d1c-7c84a32c9c9f.MOBGPU8H9KVVVHMS.SEARCH&ppt=hp&ppn=homepage&ssid=zr4tltgbzk0000001700462549024">Buy</a></p></div>
+          <div class="item"><img src="https://rukminim2.flixcart.com/image/832/832/xif0q/mobile/w/4/o/t2-pro-5g-v2321-vivo-original-imagtknhfw4adusm.jpeg?q=70" alt="Vivo T2 pro"/><p>Vivo T2 Pro 5G</p><p>21,999</p><p><a href="https://www.flipkart.com/vivo-t2-pro-5g-dune-gold-128-gb/p/itm1230688cdef18?pid=MOBGT4RZCFZWHGKT&lid=LSTMOBGT4RZCFZWHGKTC6OIFL&marketplace=FLIPKART&store=tyy%2F4io&spotlightTagId=BestsellerId_tyy%2F4io&srno=b_1_2&otracker=browse&fm=organic&iid=071c7a83-e06a-4c0c-b7b9-6d03a8846876.MOBGT4RZCFZWHGKT.SEARCH&ppt=browse&ppn=browse&ssid=2novs2tt7k0000001700462650377">Buy</a></p></div>
+          <div class="item"><img src="https://rukminim2.flixcart.com/image/832/832/xif0q/mobile/r/k/x/-original-imagtrrqkxprtd4n.jpeg?q=70" alt="Samsung Galaxy F34 5G"/><p>Samsung Galaxy F34 5G</p><p>19,999</p><p><a href="https://www.flipkart.com/samsung-galaxy-f34-5g-orchid-violet-128-gb/p/itm97f82a0acbe1f?pid=MOBGRZMYGSVHDBGJ&lid=LSTMOBGRZMYGSVHDBGJ3I9H32&marketplace=FLIPKART&store=tyy%2F4io&srno=b_1_1&otracker=browse&fm=organic&iid=a21b8c2b-9670-4024-87e4-772b102fd779.MOBGRZMYGSVHDBGJ.SEARCH&ppt=hp&ppn=homepage&ssid=nhpcc6ok8g0000001700462878743">Buy</a></p></div>
+          <div class="item"><img src="https://rukminim2.flixcart.com/image/832/832/xif0q/mobile/m/o/b/-original-imaghx9qkugtbfrn.jpeg?q=70" alt="iphone 14"><p>iphone 14</p><p>61,999</p><p><a href="https://www.flipkart.com/apple-iphone-14-starlight-128-gb/p/itm3485a56f6e676?pid=MOBGHWFHABH3G73H&lid=LSTMOBGHWFHABH3G73HCNASCL&marketplace=FLIPKART&q=mobiles&store=tyy%2F4io&spotlightTagId=BestsellerId_tyy%2F4io&srno=s_1_10&otracker=AS_QueryStore_OrganicAutoSuggest_2_2_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_2_2_na_na_na&fm=search-autosuggest&iid=a396b8b0-b41f-4d07-b87e-969fbda68960.MOBGHWFHABH3G73H.SEARCH&ppt=sp&ppn=sp&ssid=0lihdpezzk0000001700462975529&qH=eb4af0bf07c16429">Buy</a></p></div>
+          <div class="item"><img src="https://rukminim2.flixcart.com/image/832/832/xif0q/mobile/k/c/f/-original-imagg2abpjwyyvqg.jpeg?q=70" alt="Oneplus Nord CE 2"><p>OnePlus Nord CE 2 5G</p><p>17,999</p><p><a href="https://www.flipkart.com/oneplus-nord-ce-2-lite-5g-blue-tide-128-gb/p/itm7acae55b999e6?pid=MOBGMFREBAHZQGY9&lid=LSTMOBGMFREBAHZQGY9DUA9CC&marketplace=FLIPKART&q=mobiles&store=tyy%2F4io&srno=s_1_14&otracker=AS_QueryStore_OrganicAutoSuggest_2_2_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_2_2_na_na_na&fm=organic&iid=a396b8b0-b41f-4d07-b87e-969fbda68960.MOBGMFREBAHZQGY9.SEARCH&ppt=hp&ppn=homepage&ssid=0lihdpezzk0000001700462975529&qH=eb4af0bf07c16429">Buy</a></p></div>
+          <div class="item"><img src="https://rukminim2.flixcart.com/image/832/832/xif0q/mobile/3/i/y/edge-40-neo-payj0000in-motorola-original-imagtkekgruy6kpg.jpeg?q=70" alt="Moto edge 40 neo"/><p>Moto Edge 40 Neo</p><p>22,999</p><p><a href="https://www.flipkart.com/motorola-edge-40-neo-caneel-bay-128-gb/p/itm122f351a3a2a3?pid=MOBGQFX6K7YQJRSY&lid=LSTMOBGQFX6K7YQJRSY6BK1PK&marketplace=FLIPKART&q=motorola+edge+40neo&store=tyy%2F4io&srno=s_1_2&otracker=AS_QueryStore_OrganicAutoSuggest_1_4_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_1_4_na_na_ps&fm=search-autosuggest&iid=e0dbbee5-a8cf-4226-9860-bd82aea9c27b.MOBGQFX6K7YQJRSY.SEARCH&ppt=sp&ppn=sp&ssid=uddn5wcms00000001700463218649&qH=e2f3b1bd76d591c3">Buy</a></p></div>
+          <!-- <div class="item"><img src="https://rukminim2.flixcart.com/image/832/832/xif0q/mobile/j/i/j/-original-imagnfzyrwm2zxzr.jpeg?q=70" alt="poco c55"><p>Poco C55</p><p>7,999</p><p><a href="https://www.flipkart.com/poco-c55-cool-blue-128-gb/p/itm26aca9fd143ba?pid=MOBGMXSWJHRVUWFE&lid=LSTMOBGMXSWJHRVUWFESKZGEW&marketplace=FLIPKART&q=mobiles&store=tyy%2F4io&srno=s_1_16&otracker=AS_QueryStore_OrganicAutoSuggest_2_2_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_2_2_na_na_na&fm=search-autosuggest&iid=074efac0-458a-4821-8280-0150b4ef0a7b.MOBGMXSWJHRVUWFE.SEARCH&ppt=sp&ppn=sp&ssid=hw4t0p6nw00000001700463347362&qH=eb4af0bf07c16429">Buy</a></p></div> -->
+    </div>
+    </div>
+
+    
+  
+   
+  </body>
+</html>
