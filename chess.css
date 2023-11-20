@@ -1,0 +1,48 @@
+body {
+  background-image: url("../images/wood-texture.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.items {
+  background-color: brown;
+}
+.items1 {
+  background-color: antiquewhite;
+}
+
+body > div {
+  height: 722px;
+  width: 720px;
+  margin: auto;
+  box-shadow: 30px;
+}
+body > div > div {
+  border: 1px solid transparent;
+  height: 90px;
+  width: 720px;
+  display: flex;
+}
+body > div > div > div {
+  border: 1px solid transparent;
+  height: 90px;
+  width: 90px;
+  border: 1px solid black;
+}
+.items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 80px;
+  font-weight: 400px;
+  /* background-color: rgb(89, 34, 21); */
+}
+.items + div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 80px;
+  font-weight: 400px;
+
+  /* background-color: rgb(217, 245, 2); */
+}
