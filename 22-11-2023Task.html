@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Task</title>
+    <style>
+        @media screen and (min-width:320px) and (max-width:374px) 
+        {
+            body{
+                background-color: cadetblue;
+            }
+            h1{
+                color: #000;
+                display: block;
+                text-align: center;
+                font-family: garamond;
+            }
+            .main{
+            margin: auto;
+            gap: 10px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            }
+            img{
+                width: 150px;
+                height: 150px;
+                border: 1px solid salmon;
+                border-radius: 50%;
+                border-style: double;
+            }
+            .photo{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid saddlebrown;
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+            padding: 10px;
+            background-color: #444;
+        }
+        }
+        @media screen and (min-width:375px) and (max-width:424px) {
+            body{
+                background-color: rgb(0, 60, 81);
+            }
+            h1{
+                display: block;
+                text-align: center;
+                font-family: garamond;
+                color: azure;
+            }
+            .main{
+                display: flex;
+                flex-direction: column;
+                row-gap: 10px;
+                align-items: center;
+                
+            }
+            img{
+                width: 180px;
+                height: 180px;
+                border-radius: 64px 32px ;
+            }
+            .photo{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 20px;
+                background-color: #00ffab;
+                width: 200px;
+                border: 1px solid #969679;
+                border-radius: 32px 64px ;
+            }
+        }
+
+        @media screen and (min-width:425px) and (max-width:665px) {
+           body{
+            background-color: #c1292e;
+           }
+           h1{
+                display: block;
+                text-align: center;
+                font-family: garamond;
+                background-color: brown;
+                color: white;
+
+            }
+            .main{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 15px;
+                align-items: center;
+               
+                
+            }
+            img{
+                width: 160px;
+                height: 160px;
+                border-radius:20px;
+            }
+            .photo{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 20px;
+                background-color: #29bbc1;
+                width: 150px;
+                
+            }
+        }
+
+        @media screen and (min-width:667px) and (max-width:1023px){
+            body{
+                background-color: #bbb;
+            }
+            h1{
+                display: block;
+                text-align: center;
+                font-family: garamond;
+                color: #343434
+            }
+            .main{
+            width: 90%;
+            gap: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        img{
+            width: 160px;
+            height: 160px;
+        }
+        .photo{
+            width: 170px;
+            height: 170px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+            background-color: #444;
+        }
+        }
+        @media screen and (min-width:1024px){
+        body{
+                background-color: #913f92
+            }
+            h1{
+                display: block;
+                text-align: center;
+                font-family: garamond;
+                color: white
+
+            }
+            .main{
+                margin: auto;
+            width: 800px;
+            gap: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        img{
+            width: 160px;
+            height: 160px;
+        }
+        .photo{
+            width: 170px;
+            height: 170px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+            background-color: #444;
+        }
+    }
+    </style>
+</head>
+<body>
+    <h1>The Seven Immortals</h1>
+    <div class="main">
+       <div class="photo"><img src="../images/Ashwaddama.jpg" alt="Ashwaddama"/></div>
+       <div class="photo"><img src="../images/hanuman.jpg" alt="Hanuman" /></div>
+       <div class="photo"><img src="../images/parasurama.jpg" alt="Parasurama" /></div>
+       <div class="photo"><img src="../images/veda vyasa.jpg" alt="Veda Vyasa" /></div>
+       <div class="photo"><img src="../images/kripacharya.jpg" alt="Kripacharya" /></div>
+       <div class="photo"><img src="../images/vibhishana.jpeg" alt="Vibhishana" /></div>
+    </div>
+</body>
+</html>
+
+<style>
+     /* @media screen and (min-width:0px) and (max-width:400px) {
+            .menu{
+                list-style-type: none;
+                display: flex;
+                flex-direction:column;
+                background-color: aquamarine;
+                padding: 10px;
+                color: white;
+                gap: 10px;
+                position: sticky;
+                top: 0px;
+                justify-content: center;
+                align-items: justify;
+            }
+            .main{
+               
+                height: 400px;
+                margin: auto;
+
+            }
+        }
+
+        @media screen and (min-width:401px) {
+             .menu{
+                list-style-type: none;
+                color: white;
+                display: flex;
+                flex-direction: row;
+                background-color: aqua;
+                gap: 20px;
+                padding: 15px;
+                justify-content: space-evenly;
+                align-items: center;
+                position: sticky;
+                top: 0px;
+            }
+            
+        } */
+
+</style>
+    <!-- <ul class="menu">
+            <li>Home</li>
+            <li>About</li>
+            <li>Log in</li>
+            <li>Sign Up</li>
+            <li>My account</li>
+        </ul> -->
