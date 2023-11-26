@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .box{
+            display: grid;
+            grid-template-columns: 180px 180px 180px 180px;
+            gap: 10px;
+
+        }
+      .item1{
+        /* grid-area: 1/2/span 0/ span2; */
+        grid-column: 1;
+        grid-row: 1;
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+      .item2{
+        grid-column: 3;
+        grid-row: 1;
+        grid-column-start: 3;
+        grid-column-end: 5;
+      }
+      .item11{
+        grid-area:2/2;
+      }
+      .item5{
+        grid-area: 2/3/span 1/span 2;
+      }
+      .item10{
+        grid-area: 3/1/ span 1/ span 2;
+      }
+      .item14{
+        grid-area: 3/3;
+      }
+      .item12{
+        grid-area: 3/4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+<img class="item1" src="https://i.pinimg.com/474x/8a/11/f3/8a11f3fca3574cb0af6f412d666577a3.jpg" alt="Indian Wild Ass" style="width: 360px; height: 305px;">
+<img class="item2" src="https://i.pinimg.com/474x/74/5b/21/745b21e41787c9f18d58885415bc23d1.jpg" alt="Great Indian Bustard" style="width: 360px; height: 305px;">
+<img class="item3" src="https://i.pinimg.com/474x/dd/74/08/dd7408d4e4eb77ed569c8ad24f9d0e3a.jpg" alt="Red Panda" style="width: 164px; height: 305px;">
+<img class="item4" src="https://i.pinimg.com/474x/91/29/21/912921a807eff8631b0b0d1b9f8ac91e.jpg" alt="Nilgiri Tahr" style="width: 164px; height: 305px;">
+<img class="item5" src="https://i.pinimg.com/474x/e1/27/64/e127649431130bbf95c6987bfe779823.jpg" alt="Indian Pangolin" style="width: 360px; height: 305px;">
+<img class="item6" src="https://i.pinimg.com/474x/af/5f/20/af5f209840e6a8f3cee74841574465fd.jpg" alt="Ganges River Dolphin" style="width: 164px; height: 305px;">
+<img class="item7" src="https://i.pinimg.com/474x/72/24/77/7224775e619508bab41e9b10e2c5f9c0.jpg" alt="Indian Elephant" style="width: 164px; height: 305px;">
+<img class="item8" src="https://i.pinimg.com/474x/76/9b/20/769b20f7d98655fc9ecbfa55f3affc84.jpg" alt="Indian Rhinoceros" style="width: 164px; height: 305px;">
+<img class="item9" src="https://i.pinimg.com/564x/78/7f/f7/787ff7beac6864ffac76d3d974652af7.jpg" alt="Bengal Tiger" style="width: 164px; height: 305px;">
+<img class="item10" src="https://i.pinimg.com/564x/f0/5b/cc/f05bcc1db8f35ca871724f34dff05e34.jpg" alt="Asiatic Lion" style="width: 360px; height: 305px;">
+<img class="item11" src="https://i.pinimg.com/564x/c2/44/d3/c244d3d14742f1f9efe7f4ec3566dd05.jpg" alt="Snow Leopard" style="width: 164px; height: 305px;">
+<img class="item12" src="https://i.pinimg.com/736x/e9/d4/80/e9d48034dcd71c899779c2e10f7d3071.jpg" alt="One-horned Rhinoceros" style="width: 164px; height: 305px;">
+<img class="item13" src="https://i.pinimg.com/474x/27/e3/cc/27e3cc3ec7e6e9fd86dfad783df73cc9.jpg" alt="Blackbuck" style="width: 164px; height: 305px;">
+<img class="item14" src="https://i.pinimg.com/736x/17/5d/ca/175dca99deaf8dddb45e8ee3700a5827.jpg" alt="Lion-tailed Macaque" style="width: 164px; height: 305px;">
+<img class="item15" src="https://i.pinimg.com/564x/6d/f8/94/6df8942041999c4b18f8d95952bb0ebf.jpg" alt="Resplendent Tree Frog" style="width: 164px; height: 305px;">
+<img class="item16" src="https://i.pinimg.com/474x/b1/b8/fb/b1b8fb69e551ea0501b3894c316682c2.jpg" alt="Kashmiri Red Stag" style="width: 164px; height: 305px;">
+    <!-- <div class="container">
+      <div class="items item1">
+        <img
+          src="https://i.pinimg.com/564x/78/7f/f7/787ff7beac6864ffac76d3d974652af7.jpg"
+          alt="Bengal Tiger"
+        />
+      </div>
+      <div class="items item2">
+        <img
+          src="https://i.pinimg.com/564x/f0/5b/cc/f05bcc1db8f35ca871724f34dff05e34.jpg"
+          alt="Asiatic Lion"
+        />
+      </div>
+      <div class="items item3">
+        <img
+          src="https://i.pinimg.com/564x/c2/44/d3/c244d3d14742f1f9efe7f4ec3566dd05.jpg"
+          alt="Snow Leopard"
+        />
+      </div>
+      <div class="items item4">
+        <img
+          src="https://i.pinimg.com/736x/e9/d4/80/e9d48034dcd71c899779c2e10f7d3071.jpg"
+          alt="One-horned Rhinoceros"
+        />
+      </div>
+      <div class="items item5">
+        <img
+          src="https://i.pinimg.com/474x/27/e3/cc/27e3cc3ec7e6e9fd86dfad783df73cc9.jpg"
+          alt="Blackbuck"
+        />
+      </div>
+      <div class="items item6">
+        <img
+          src="https://i.pinimg.com/736x/17/5d/ca/175dca99deaf8dddb45e8ee3700a5827.jpg"
+          alt="Lion-tailed Macaque"
+        />
+      </div>
+      <div class="items item7">
+        <img
+          src="https://i.pinimg.com/564x/6d/f8/94/6df8942041999c4b18f8d95952bb0ebf.jpg"
+          alt="Resplendent Tree Frog"
+        />
+      </div>
+      <div class="items item8">
+        <img
+          src="https://i.pinimg.com/474x/b1/b8/fb/b1b8fb69e551ea0501b3894c316682c2.jpg"
+          alt="Kashmiri Red Stag"
+        />
+      </div>
+      <div class="items item9">
+        <img
+          src="https://i.pinimg.com/474x/8a/11/f3/8a11f3fca3574cb0af6f412d666577a3.jpg"
+          alt="Indian Wild Ass"
+        />
+      </div>
+      <div class="items item10">
+        <img
+          src="https://i.pinimg.com/474x/74/5b/21/745b21e41787c9f18d58885415bc23d1.jpg"
+          alt="Great Indian Bustard"
+        />
+      </div>
+      <div class="items item11">
+        <img
+          src="https://i.pinimg.com/474x/dd/74/08/dd7408d4e4eb77ed569c8ad24f9d0e3a.jpg"
+          alt="Red Panda"
+        />
+      </div>
+      <div class="items item12">
+        <img
+          src="https://i.pinimg.com/474x/91/29/21/912921a807eff8631b0b0d1b9f8ac91e.jpg"
+          alt="Nilgiri Tahr"
+        />
+      </div>
+      <div class="items item13">
+        <img
+          src="https://i.pinimg.com/474x/e1/27/64/e127649431130bbf95c6987bfe779823.jpg"
+          alt="Indian Pangolin"
+        />
+      </div>
+      <div class="items item14">
+        <img
+          src="https://i.pinimg.com/474x/af/5f/20/af5f209840e6a8f3cee74841574465fd.jpg"
+          alt="Ganges River Dolphin"
+        />
+      </div>
+      <div class="items item15">
+        <img
+          src="https://i.pinimg.com/474x/72/24/77/7224775e619508bab41e9b10e2c5f9c0.jpg"
+          alt="Indian Elephant"
+        />
+      </div>
+      <div class="items item16">
+        <img
+          src="https://i.pinimg.com/474x/76/9b/20/769b20f7d98655fc9ecbfa55f3affc84.jpg"
+          alt="Indian Rhinoceros"
+        />
+      </div>
+    </div> -->
+
+  </body>
+</html>
+
+<!-- <div class="items"><img src="https://i.pinimg.com/564x/78/7f/f7/787ff7beac6864ffac76d3d974652af7.jpg" alt="Bengal Tiger" style="width: 564px; height: 705px;"></div>
+        <div class="items"><img src="https://i.pinimg.com/564x/f0/5b/cc/f05bcc1db8f35ca871724f34dff05e34.jpg" alt="Asiatic Lion" style="width: 563px; height: 376px;"></div>
+        <div class="items"><img src="https://i.pinimg.com/564x/c2/44/d3/c244d3d14742f1f9efe7f4ec3566dd05.jpg" alt="Snow Leopard" style="width: 564px; height: 803px;"></div>
+        <div class="items"><img src="https://i.pinimg.com/736x/e9/d4/80/e9d48034dcd71c899779c2e10f7d3071.jpg" alt="One-horned Rhinoceros" style="width:732px; height:1102px;"></div>
+        <div class="items"><img src="https://i.pinimg.com/474x/27/e3/cc/27e3cc3ec7e6e9fd86dfad783df73cc9.jpg" alt="Blackbuck" style="width: 474px; height: 591px;"></div>
+        <div class="items"><img src="https://i.pinimg.com/736x/17/5d/ca/175dca99deaf8dddb45e8ee3700a5827.jpg" alt="Lion-tailed Macaque" style="width: 683px; height: 1024px;"></div>
+        <div class="items"><img src="https://i.pinimg.com/564x/6d/f8/94/6df8942041999c4b18f8d95952bb0ebf.jpg" alt="Resplendent Tree Frog" style="width: 563px; height: 412px;"></div>
+        <div class="items"><img src="https://i.pinimg.com/474x/b1/b8/fb/b1b8fb69e551ea0501b3894c316682c2.jpg" alt="Kashmiri Red Stag" style="width: 474px; height: 474px;"></div> -->
+<!-- <div class="items"><img src="https://i.pinimg.com/564x/78/7f/f7/787ff7beac6864ffac76d3d974652af7.jpg" alt="Bengal Tiger" style="max-width: 564px; max-height: 705px;"></div>
+        <div class="items"><img src="https://i.pinimg.com/564x/f0/5b/cc/f05bcc1db8f35ca871724f34dff05e34.jpg" alt="Asiatic Lion" style="max-width: 563px; max-height: 376px;"></div>
+        <div class="items"><img src="https://i.pinimg.com/564x/c2/44/d3/c244d3d14742f1f9efe7f4ec3566dd05.jpg" alt="Snow Leopard" style="max-width: 564px; max-height: 803px;"></div>
+        <div class="items"><img src="https://i.pinimg.com/736x/e9/d4/80/e9d48034dcd71c899779c2e10f7d3071.jpg" alt="One-horned Rhinoceros" style="max-width: 732px; max-height: 1102px;"></div>
+        <div class="items"><img src="https://i.pinimg.com/474x/27/e3/cc/27e3cc3ec7e6e9fd86dfad783df73cc9.jpg" alt="Blackbuck" style="max-width: 474px; max-height: 591px;"></div>
+        <div class="items"><img src="https://i.pinimg.com/736x/17/5d/ca/175dca99deaf8dddb45e8ee3700a5827.jpg" alt="Lion-tailed Macaque" style="max-width: 683px; max-height: 1024px;"></div>
+        <div class="items"><img src="https://i.pinimg.com/564x/6d/f8/94/6df8942041999c4b18f8d95952bb0ebf.jpg" alt="Resplendent Tree Frog" style="max-width: 563px; max-height: 412px;"></div>
+        <div class="items"><img src="https://i.pinimg.com/474x/b1/b8/fb/b1b8fb69e551ea0501b3894c316682c2.jpg" alt="Kashmiri Red Stag" style="max-width: 474px; max-height: 474px;"></div>-->
