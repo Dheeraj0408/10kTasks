@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Transforms</title>
+    <style>
+      body{
+        background-color: darkgray;
+      }
+      h1{
+        text-align: center;
+      }
+      span{
+        font-weight: bold;
+        font-size: large;
+      }
+      .main{
+        margin-top: 50px;
+        display: flex;
+        gap: 70px;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      .container{
+        background-color: black;
+        width: 400px;
+        height: 420px;
+
+      }
+      .container2{
+        background-color: white;
+        width: 400px;
+        height: 420px;
+      }
+      .text {
+        position: absolute;
+        right: 300px;
+        top: 180px;
+        padding: 10px;
+
+        width: 150px;
+        border: 1px solid red;
+        background-color: skyblue;
+      }
+
+      /* input[type="radio"]:checked ~ .text {
+        background-color: #ddd;
+      } */
+
+      input[value="radio1"]:checked ~ .text {
+        background-color: #ddd;
+        transform: none;
+      }
+
+      input[value="radio2"]:checked ~ .text {
+        transform: rotate(10deg);
+      }
+
+      input[value="radio3"]:checked ~ .text {
+        transform: rotate(45deg);
+      }
+
+      input[value="radio4"]:checked ~ .text {
+        transform: rotateX(45deg);
+      }
+
+      input[value="radio5"]:checked ~ .text {
+        transform: rotateX(100deg);
+      }
+
+      input[value="radio6"]:checked ~ .text {
+        transform: rotateY(45deg);
+      }
+
+      input[value="radio7"]:checked ~ .text {
+        transform: rotateY(80deg);
+      }
+
+      input[value="radio8"]:checked ~ .text {
+        transform: skew(20deg, 20deg);
+      }
+
+      input[value="radio9"]:checked ~ .text {
+        transform: skew(30deg, 30deg);
+      }
+
+      input[value="radio10"]:checked ~ .text {
+        transform: skewX(30deg);
+      }
+
+      input[value="radio11"]:checked ~ .text {
+        transform: skewx(40deg);
+      }
+
+      input[value="radio12"]:checked ~ .text {
+        transform: skewY(30deg);
+      }
+
+      input[value="radio13"]:checked ~ .text {
+        transform: skewY(40deg);
+      }
+
+      input[value="radio14"]:checked ~ .text {
+        transform: translate(20px, 10px);
+      }
+
+      input[value="radio15"]:checked ~ .text {
+        transform: translate(20px, 20px);
+      }
+
+      input[value="radio16"]:checked ~ .text {
+        transform: scale(2, 2);
+      }
+
+      input[value="radio17"]:checked ~ .text {
+        transform: scale(2, 3);
+      }
+
+      input[value="radio18"]:checked ~ .text {
+        transform: matrix(0.866, 0.7, -0.8, 0.866, 0, 0);
+      }
+
+      input[value="radio19"]:checked ~ .text {
+        transform: matrix(0.586, 0.8, -0.8, 0.586, 0, 0);
+      }
+
+      input[value="radio20"]:checked ~ .text {
+        transform: matrix(0.586, 0.8, -0.8, 0.586, 40, 30);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Transforms</h1>
+    <div class="main">
+      <div class="container">
+        <input type="radio" name="transform" value="radio1" />
+        <span><span style="color:#c5a5c5;">transform</span><span style="color: white;"> : </span><span style="color: #88c999;">none;</span></span><br />
+
+        <input type="radio" name="transform" value="radio2" />
+        <span><span style="color:#c5a5c5;">transform</span><span style="color: white;"> : </span><span style="color: #88c999;">rotate(10deg)</span></span><br />
+
+        <input type="radio" name="transform" value="radio3" />
+        <span><span style="color:#c5a5c5;">transform</span><span style="color: white;"> : </span><span style="color: #88c999;">rotate(45deg)</span></span><br />
+
+        <input type="radio" name="transform" value="radio4" />
+        <span><span style="color:#c5a5c5;">transform</span><span style="color: white;"> : </span><span style="color: #88c999;">rotateX(45deg)</span></span><br />
+
+        <input type="radio" name="transform" value="radio5" />
+        <span><span style="color:#c5a5c5;">transform</span><span style="color: white;"> : </span><span style="color: #88c999;">rotateX(100deg)</span></span><br />
+
+        <input type="radio" name="transform" value="radio6" />
+        <span><span style="color:#c5a5c5;">transform</span><span style="color: white;"> : </span><span style="color: #88c999;">rotateY(45deg)</span></span><br />
+
+        <input type="radio" name="transform" value="radio7" />
+        <span><span style="color:#c5a5c5;">transform</span><span style="color: white;"> : </span><span style="color: #88c999;">rotateY(80deg)</span></span><br />
+
+        <input type="radio" name="transform" value="radio8" />
+        <span><span style="color:#c5a5c5;">transform</span><span style="color: white;"> : </span><span style="color: #88c999;">skew(20deg,20deg)</span></span><br />
+
+        <input type="radio" name="transform" value="radio9" />
+        <span><span style="color:#c5a5c5;">transform</span><span style="color: white;"> : </span><span style="color: #88c999;">skew(30deg,30deg)</span></span><br />
+
+        <input type="radio" name="transform" value="radio10" />
+        <span><span style="color:#c5a5c5;">transform</span><span style="color: white;"> : </span><span style="color: #88c999;">skewX(30deg)</span></span><br />
+
+        <input type="radio" name="transform" value="radio11" />
+        <span><span style="color:#c5a5c5;">transform</span><span style="color: white;"> : </span><span style="color: #88c999;">skewX(40deg)</span></span><br />
+
+        <input type="radio" name="transform" value="radio13" />
+        <span><span style="color:#c5a5c5;">transform</span><span style="color: white;"> : </span><span style="color: #88c999;">skewY(30deg)</span></span><br />
+
+        <input type="radio" name="transform" value="radio12" />
+        <span><span style="color:#c5a5c5;">transform</span><span style="color: white;"> : </span><span style="color: #88c999;">skewY(40deg)</span></span><br />
+
+        <input type="radio" name="transform" value="radio14" />
+        <span><span style="color:#c5a5c5;">transform</span><span style="color: white;"> : </span><span style="color: #88c999;">translate(20px,10px)</span></span><br />
+
+        <input type="radio" name="transform" value="radio15" />
+        <span><span style="color:#c5a5c5;">transform</span><span style="color: white;"> : </span><span style="color: #88c999;">translate(20px,20px)</span></span><br />
+
+        <input type="radio" name="transform" value="radio16" />
+        <span><span style="color:#c5a5c5;">transform</span><span style="color: white;"> : </span><span style="color: #88c999;">scale(2,2)</span></span><br />
+
+        <input type="radio" name="transform" value="radio17" />
+        <span><span style="color:#c5a5c5;">transform</span><span style="color: white;"> : </span><span style="color: #88c999;">scale(2,3)</span></span><br />
+
+        <input type="radio" name="transform" value="radio18" />
+        <span><span style="color:#c5a5c5;">transform</span><span style="color: white;"> : </span><span style="color: #88c999;">matrix(0.866,0.7,-0.8,0.866,0,0)</span></span><br />
+
+        <input type="radio" name="transform" value="radio19" />
+        <span><span style="color:#c5a5c5;">transform</span><span style="color: white;"> : </span><span style="color: #88c999;">matrix(0.586,0.8,-0.8,0.586,0,0)</span></span><br />
+
+        <input type="radio" name="transform" value="radio20" />
+        <span><span style="color:#c5a5c5;">transform</span><span style="color: white;"> : </span><span style="color: #88c999;">matrix(0.586,0.8,-0.8,0.586,40,30)</span></span><br />
+
+        <div class="text">
+          See what different transform values does with this blue DIV element.
+        </div>
+      </div>
+      <div class="container2">
+
+      </div>
+    </div>
+  </body>
+</html>
