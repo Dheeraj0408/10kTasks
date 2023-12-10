@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/07-12-2023.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        .nav-item a{
+            color: white;
+            text-decoration: none;
+        }
+        *{
+            font-family: consolas;
+            font-size: 16px;
+        }
+        .navbar{
+            background-color: black;
+            color: white;
+            display: flex;
+            padding: 7px;
+            position: fixed;
+            top: 0;
+            right: 0;
+            left:0;
+            z-index: 2;
+
+        }
+        .nav-item{
+            width: 100%;
+            line-height: 40px;
+            text-align: center;
+            font-size: 13px;
+            font-family: consolas;
+        }
+        .nav-item:hover{
+            cursor: pointer;
+            color: black;
+            background-color: lightgray;
+        }
+        .header{
+            background-image: url('../images/cafe-1.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            filter: grayscale(50%);
+            height: 77vh;
+            width: 100%;
+        }
+        .the-cafe{
+            font-family: garamond;
+            color: #ffffff;
+            font-size: 120px;
+            position: absolute;
+            top: 23%;
+            right: 44%;  
+            z-index: 1;
+        }
+        .open{
+            background-color: black;
+            color: #ffffff;
+            padding: 5px;
+            position: absolute;
+            top:90%;
+            left: 2%;
+            font-family: "Inconsolata", sans-serif;
+            font-family: Verdana,sans-serif;
+        }
+        .span-3{
+            position: absolute;
+            top: 92%;
+            right: 2%;
+            font-size: 15px;
+            color: #ffffff;
+        }
+        .about{
+            font-family: Segoe UI;
+            background-color: black;
+            color: #ffffff;
+            width: fit-content;
+            padding: 15px;
+            word-spacing: 5px;
+            letter-spacing: 3px;
+        }
+        .container{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 20px;
+           
+        }
+        .heading{
+            width: 65%;
+            height: 150px;
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .content-1{
+            width: 65%;
+            padding: 10px 30px;
+            text-align: justify;
+            word-spacing: 1.5px;
+        }
+        .content-2{
+            width: 65%;
+            padding: 0px 20px;
+            background-color: rgba(175, 210, 223, 0.648);
+        }
+        .image{
+            width: 65%;
+            font-family: consolas;
+        }
+        .btn{
+            width: 50%;
+            background-color: #ffffff;
+            border: none;
+            font-family: consolas;
+            
+        }
+       .btn-group{
+        width: 100%;
+        padding: 10px;
+       }
+       .tab-content{
+        width: 65%;
+       }
+       #eat,#drink{
+        padding: 10px;
+       }
+       button{
+        background-color: darkgray;
+        color: white;
+        border: none;
+       }
+       .text-grey{
+        opacity: 0.8;
+        font-size: 15px;
+       }
+       h5{
+        font-weight: bolder;
+        font-size: 20px;
+       }
+       .tab-content{
+        box-shadow: 0px 0px 5px grey ;
+       }
+       .f{
+        background-color: black;
+        color: white;
+       }
+       form{
+        width: 65%;
+       }
+       form input{
+        padding: 15px 7px;
+        width: 100%;
+       }
+       .btn-1{
+        background-color: black;
+        color: #ffffff;
+        width: fit-content;
+       }
+
+       @media screen and (max-width:767px) {
+            .container,.heading,.content-1,.content-2,.image,form,.tab-content{
+                width: 100%;
+            }
+            .the-cafe{
+                font-size: 70px;
+                right: 36%;
+            }
+            .open{
+                top: 80%;
+                left: 15%;
+            }
+            .span-3{
+                right: 30%;
+            }
+            .content-1{
+                padding: 0;
+            }
+
+       }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-item"><a href="#page-1">HOME</a></div>
+        <div class="nav-item"><a href="#page-2">ABOUT</a></div>
+        <div class="nav-item"><a href="#page-3">MENU</a></div>
+        <div class="nav-item"><a href="#page-4">WHERE</a></div>
+    </div> 
+        <div class="header" id="page-1">
+            <span class="the-cafe">the <br>cafe</span>
+            <span class="open">Open from 6am to 5pm</span>
+            <span class="span-3">15 Adr street, 5015</span>
+        </div>
+        <div class="container" id="page-2"> 
+            <div class="heading">
+                <span class="about">ABOUT THE CAFE</span>
+            </div>
+            <div style="font-family: consolas,Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" class="content-1">
+                <p>The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch sandwiches, as well as a selection of sides and salads and other good stuff.</p>
+            </div>
+            <div class="content-2" style="font-family: consolas,Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                <p><i>"Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new sweet.</i></p>
+                <p>Chef, Coffeeist and Owner: Liam Brown</p>
+            </div>
+            <div class="image">
+                <img src="https://www.w3schools.com/w3images/coffeeshop.jpg" alt="" width="100%" style="filter: grayscale(90%);"/>
+                <p><b>Opening hours:</b> everyday from 6am to 5pm.</p>
+                <p><b>Address:</b> 15 Adr street, 5015, NY</p>
+            </div>
+        </div>
+        <div class="container" id="page-3">
+            <div class="heading" >
+                <span class="about">THE MENU</span>
+            </div>
+            <div class="tab-content">
+                <div class="btn-group">
+                    <button class="btn btn-default" data-toggle="tab" data-target="#eat">Eat</button>
+                    <button class="btn btn-default" data-toggle="tab" data-target="#drink">Drink</button>
+                </div>
+                <div id="eat" class="tab-pane fade in active">
+                    <h5>Bread Basket</h5>
+                    <p class="text-grey">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
+                  
+                    <h5>Honey Almond Granola with Fruits</h5>
+                    <p class="text-grey">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
+                  
+                    <h5>Belgian Waffle</h5>
+                    <p class="text-grey">Vanilla flavored batter with malted flour 7.50</p><br>
+                  
+                    <h5>Scrambled eggs</h5>
+                    <p class="text-grey">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
+                  
+                    <h5>Blueberry Pancakes</h5>
+                    <p class="text-grey">With syrup, butter and lots of berries 8.50</p>
+                </div>
+                <div id="drink" class="tab-pane fade">
+                    <h5>Coffee</h5>
+                    <p class="text-grey">Regular coffee 2.50</p><br>
+                    
+                    <h5>Chocolato</h5>
+                    <p class="text-grey">Chocolate espresso with milk 4.50</p><br>
+                    
+                    <h5>Corretto</h5>
+                    <p class="text-grey">Whiskey and coffee 5.00</p><br>
+                    
+                    <h5>Iced tea</h5>
+                    <p class="text-grey">Hot tea, except not hot 3.00</p><br>
+                    
+                    <h5>Soda</h5>
+                    <p class="text-grey">Coke, Sprite, Fanta, etc. 2.50</p>
+                </div>
+            </div>
+            <div class="image">
+                <img src="../images/coffeehouse2.jpg" alt="" width="100%" style="filter: grayscale(70%);">
+            </div>
+        </div>
+        <div class="container" id="page-4">
+            <div class="heading">
+                <span class="about">WHERE TO FIND US</span>
+            </div>
+            <p style="" class="find-us">Find us at some address at some place.</p>
+            <div class="image">
+                <img src="../images/map.jpg" alt="" width="100%" style="filter: grayscale(70%);"/>
+                <p><span class="f">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+                <p><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
+            </div>
+            <form action="" method="post">
+                <p><input type="text" name="name" id="name" placeholder="Name"/></p>
+                <p><input type="number" name="people" id="people" placeholder="How many people"/></p>
+                <p><input type="datetime-local" name="time" id="time" placeholder=""/></p>
+                <p><input type="text" name="msg" id="msg" placeholder="Message \ Special requirements"></p>
+                <p><button class="btn btn-1" type="submit">SEND MESSAGE</button></p>
+            </form>           
+        </div>
+        <footer style="display: flex; justify-content: center; align-items: center; height: 200px; font-size: 20px;"> 
+            Powered by .CSS
+        </footer>
+    </body>
+</html>
